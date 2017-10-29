@@ -1,0 +1,20 @@
+
+test curl cmd
+
+curl http://127.0.0.1:8080/ping
+
+curl -X POST http://127.0.0.1:8080/helloworld -H "Content-Type:application/x-www-form-urlencoded" -d "firstparam=yousa&lastparam=li"
+
+curl -X POST http://127.0.0.1:8080/create -H "Content-Type:application/x-www-form-urlencoded" -d "firstparam=yousa&lastparam=li"
+
+curl -X POST http://127.0.0.1:8080/create -H "Content-Type:application/x-www-form-urlencoded" -d "firstparam=yumeng&lastparam=zhang"
+
+curl -X POST http://127.0.0.1:8080/getall -H "Content-Type:application/x-www-form-urlencoded" -d "firstparam=yumeng&lastparam=zhang"
+
+curl -X POST http://127.0.0.1:8080/update -H "Content-Type:application/x-www-form-urlencoded" -d "id=3&firstparam=yumeng&lastparam=love"
+
+curl -X POST http://127.0.0.1:8080/update -H "Content-Type:application/x-www-form-urlencoded" -d "id=1&firstparam=yousa&lastparam=li"
+
+curl -X POST http://127.0.0.1:8080/delete -H "Content-Type:application/x-www-form-urlencoded" -d "firstparam=yousa"
+
+curl -X POST http://127.0.0.1:8080/delete -H "Content-Type:application/x-www-form-urlencoded" -d "firstparam=yumeng"

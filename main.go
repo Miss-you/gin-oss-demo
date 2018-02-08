@@ -40,10 +40,7 @@ func main(){
     })
 
 	router.POST("/helloworld", func(c *gin.Context) {
-        firstparam := c.DefaultPostForm("firstparam", "yousa")
-        lastparam := c.PostForm("lastparam")
-
-		c.String(http.StatusOK, "Hello %s %s", firstparam, lastparam)
+		c.String(http.StatusOK, "welcome use the qcloud API gateway. If you see this message, it means that your signature is success!")
     })
 
 	router.POST("/create", func(c *gin.Context) {
